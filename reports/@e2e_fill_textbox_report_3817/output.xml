@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-23T12:48:06.752700" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Local D\BELAJAR AUTOMATION\web-automation-demoqa\tests">
+<suite id="s1-s1" name="E2E" source="D:\Local D\BELAJAR AUTOMATION\web-automation-demoqa\tests\e2e">
+<suite id="s1-s1-s1" name="E2E Textbox" source="D:\Local D\BELAJAR AUTOMATION\web-automation-demoqa\tests\e2e\e2e_textbox.robot">
+<test id="s1-s1-s1-t1" name="Scenario: Verify user can fill all text Box field" line="10">
+<kw name="Open web browser" owner="general_keyword" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:06.940705" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/elements'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-23T12:48:06.940705" elapsed="5.740104"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-23T12:48:12.680809" elapsed="0.034955"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T12:48:17.717078" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T12:48:12.715764" elapsed="5.001314"/>
+</kw>
+<status status="PASS" start="2024-09-23T12:48:06.940705" elapsed="10.776373"/>
+</kw>
+<kw name="Given User redirect to Text Box sidebar" owner="general_keyword">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:17.719066" level="INFO">Clicking element 'xpath://*[text()="Text Box"]'.</msg>
+<arg>${sidebar_text_box}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:17.718962" elapsed="0.062526"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T12:48:22.781852" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T12:48:17.781488" elapsed="5.000364"/>
+</kw>
+<status status="PASS" start="2024-09-23T12:48:17.718362" elapsed="5.063490"/>
+</kw>
+<kw name="When User wait" owner="general_keyword">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T12:48:27.782535" level="INFO">Slept 5 seconds.</msg>
+<arg>${SECONDS}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T12:48:22.781852" elapsed="5.000683"/>
+</kw>
+<arg>5s</arg>
+<status status="PASS" start="2024-09-23T12:48:22.781852" elapsed="5.000683"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:27.782535" level="INFO">Typing text 'Ahmad Rindhoni' into text field 'id:userName'.</msg>
+<arg>${textbox_fullname_textbox}</arg>
+<arg>Ahmad Rindhoni</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:27.782535" elapsed="0.088673"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:27.872390" level="INFO">Typing text 'rakyat@gmail.com' into text field 'id:userEmail'.</msg>
+<arg>${textbox_email_textbox}</arg>
+<arg>rakyat@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:27.872068" elapsed="0.071361"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:27.943429" level="INFO">Typing text 'duren tiga jakarta selatan' into text field 'id:currentAddress'.</msg>
+<arg>${textbox_currentaddress_textbox}</arg>
+<arg>duren tiga jakarta selatan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:27.943429" elapsed="0.088009"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:28.031852" level="INFO">Typing text 'pati jawa tengah' into text field 'id:permanentAddress'.</msg>
+<arg>${textbox_permanentaddress_textbox}</arg>
+<arg>pati jawa tengah</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:28.031438" elapsed="0.060943"/>
+</kw>
+<kw name="And Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:28.092381" level="INFO">Clicking element 'id:submit'.</msg>
+<arg>${textbox_submit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-23T12:48:28.092381" elapsed="0.039982"/>
+</kw>
+<kw name="And User wait" owner="general_keyword">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-23T12:48:33.132981" level="INFO">Slept 5 seconds.</msg>
+<arg>${SECONDS}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-23T12:48:28.132363" elapsed="5.000618"/>
+</kw>
+<arg>5s</arg>
+<status status="PASS" start="2024-09-23T12:48:28.132363" elapsed="5.000939"/>
+</kw>
+<kw name="Then Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:33.154158" level="INFO">Element 'xpath://p[@id="name"]' is displayed.</msg>
+<arg>${output_fullname_label}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T12:48:33.133302" elapsed="0.020856"/>
+</kw>
+<kw name="Then Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:33.164099" level="INFO">Element 'xpath://p[@id="email"]' is displayed.</msg>
+<arg>${output_email_label}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T12:48:33.154158" elapsed="0.009941"/>
+</kw>
+<kw name="Then Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:33.184240" level="INFO">Element 'xpath://p[@id="currentAddress"]' is displayed.</msg>
+<arg>${output_currentaddress_label}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T12:48:33.164099" elapsed="0.020141"/>
+</kw>
+<kw name="Then Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-09-23T12:48:33.194251" level="INFO">Element 'xpath://p[@id="permanentAddress"]' is displayed.</msg>
+<arg>${output_permanentaddress_label}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-23T12:48:33.184240" elapsed="0.010011"/>
+</kw>
+<kw name="Close web browser" owner="general_keyword" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-23T12:48:33.194251" elapsed="2.134956"/>
+</kw>
+<status status="PASS" start="2024-09-23T12:48:33.194251" elapsed="2.134956"/>
+</kw>
+<tag>@e2e_fill_textbox</tag>
+<status status="PASS" start="2024-09-23T12:48:06.940705" elapsed="28.388502"/>
+</test>
+<status status="PASS" start="2024-09-23T12:48:06.784047" elapsed="28.545160"/>
+</suite>
+<status status="PASS" start="2024-09-23T12:48:06.784047" elapsed="28.545160"/>
+</suite>
+<status status="PASS" start="2024-09-23T12:48:06.768327" elapsed="28.560880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">@e2e_fill_textbox</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="E2E">Tests.E2E</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="E2E Textbox">Tests.E2E.E2E Textbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

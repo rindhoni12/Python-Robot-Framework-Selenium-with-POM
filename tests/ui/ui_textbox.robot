@@ -1,10 +1,11 @@
 *** Settings ***
 Library         SeleniumLibrary
-Resource        ../../resources/locators/text_box/text_box_page.robot
 Resource        ../../resources/keywords/general_keyword.robot
+Resource        ../../resources/locators/text_box/text_box_page.robot
 
 Test Setup      Open web browser
 Test Teardown   Close web browser
+
 
 *** Test Cases ***
 Scenario: Verify UI Text Box Page
