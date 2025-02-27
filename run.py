@@ -2,7 +2,7 @@ import subprocess
 import random
 
 def run_robot_test():
-    Tag =  '@ui_textbox_page'
+    Tag =  '@ui_trending_ramadan'
     
     # Path ke folder dimana file .robot yang ingin Anda jalankan
     robot_file_path = "tests"

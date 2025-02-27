@@ -1,5 +1,5 @@
 *** Variables ***
 
 ${BROWSER}        chrome
-${URL}            https://demoqa.com/elements
+${URL}            https://www.idntimes.com
 
